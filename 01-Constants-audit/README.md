@@ -1,6 +1,6 @@
 # Financial Model Audit — SaaS P&L
 
-**Found 9 hidden assumptions across 218 cells, fixed 3 formula errors, and rebuilt the model so every number traces back to one assumption sheet.**
+**Found 9 hidden assumptions across 218 cells, fixed 3 formula errors, and rebuilt the model so every number traces back to one centralized assumption sheet.**
 
 ---
 
@@ -24,7 +24,7 @@ If the answer requires hunting through 218 cells to find what breaks, the model 
 
 | Finding | Impact |
 |---|---|
-| **9 hardcoded constants** across 218 cells (56% of the P&L) | Model couldn't be re-forecast without manual edits |
+| **9 hardcoded constants** across 260 cells (50% of the P&L) | Model couldn't be re-forecast without manual edits |
 | **6 of 9 constants were missing** from the assumptions sheet entirely | No single source of truth |
 | **Tax applied inconsistently** — only 7 of 37 rows matched the stated 25% rate | 5,455 error in total tax |
 | **4 unexplained manual opex adjustments** left in the model | 310 overstated opex |
@@ -36,16 +36,14 @@ If the answer requires hunting through 218 cells to find what breaks, the model 
 
 - Centralized all assumptions into a single sheet with named ranges
 - Rebuilt every P&L column as a formula linked to those assumptions
-- Corrected the tax, opex, and cash flow logic
+- Corrected the tax, opex, net income, and cash flow logic
 - Documented every change with before/after values in an audit log
 
-**Result:** Ending cash moved from **(156,272) to (100,924)** — a +55,348 correction that reconciles exactly to the three fixes. Hardcoded P&L cells went from **218 to 0**.
+**Result:**Hardcoded P&L cells went from **260 to 0**.
 
 ---
 
 ## Skills Demonstrated
-
-**Financial modeling** — P&L construction, cash flow bridge, tax treatment on losses, opening/closing cash roll-forward
 
 **Model audit** — Constants detection, reverse-engineering formulas from static values, tolerance-based matching, identifying outliers
 
@@ -57,12 +55,11 @@ If the answer requires hunting through 218 cells to find what breaks, the model 
 
 ## Files
 
-| Folder | What's Inside |
+| File | What's Inside |
 |---|---|
-| `data/` | The pre-audit model — assumptions and 37-month P&L |
-| `audit/` | Full audit table, change log, and pre-fix snapshot |
-| `prompts/` | The exact prompts used to run the audit |
-| `docs/` | Detailed methodology and findings walkthrough |
+| `Model Audit v0/` | The pre-audit model — assumptions and 37-month P&L |
+| `Model Audit v1` | Final Model including audit table, change log, and pre-fix snapshot |
+| `Prompt/` | The exact prompts used to run the audit |
 
 ---
 
