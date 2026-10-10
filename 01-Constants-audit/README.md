@@ -1,6 +1,6 @@
 # Financial Model Audit — SaaS P&L
 
-**Found 9 hidden assumptions across 218 cells, fixed 3 formula errors, and rebuilt the model so every number traces back to one centralized assumption sheet.**
+**Found 9 hidden assumptions across 260 cells, fixed 3 formula errors, and rebuilt the model so every number traces back to one centralized assumption sheet.**
 
 ---
 
@@ -16,11 +16,11 @@ I ran a structured audit to find every hidden constant, corrected the errors, an
 
 Most models look fine until someone asks: *"What happens to our runway if COGS goes up 3 points?"*
 
-If the answer requires hunting through 218 cells to find what breaks, the model isn't a model — it's a spreadsheet. This project is about closing that gap.
+If the answer requires hunting through 260 cells to find what breaks, the model isn't a model — it's a spreadsheet. This project is about closing that gap.
 
 ---
 
-## What I Found
+## What I Found (All amounts in EUR thousands)
 
 | Finding | Impact |
 |---|---|
@@ -28,7 +28,7 @@ If the answer requires hunting through 218 cells to find what breaks, the model 
 | **6 of 9 constants were missing** from the assumptions sheet entirely | No single source of truth |
 | **Tax applied inconsistently** — only 7 of 37 rows matched the stated 25% rate | 5,455 error in total tax |
 | **4 unexplained manual opex adjustments** left in the model | 310 overstated opex |
-| **Cash flow omitted the depreciation add-back** | Understated cash by 1,500/month, 55,500 cumulative |
+| **Cash flow omitted the depreciation and deferred tax add-back** | Understated cash by 55,500 of depreciation and 22,975 dta cumulative |
 
 ---
 
@@ -71,4 +71,4 @@ Excel · Claude (Opus 5.5) · CSV
 
 ---
 
-**[Your Name]** · [LinkedIn] · [GitHub] · [Email]
+**[Dennis JOHN]** · [https://www.linkedin.com/in/dennisjhn/] · [dennis.john@essec.edu]

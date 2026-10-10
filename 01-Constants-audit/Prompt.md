@@ -28,7 +28,7 @@ Also summarize:
 
 These are the fixes to be executed as per your review:
 
-1\. tax should be 25% of pre-tax profit on all rows 
+1\. tax should be 25% of pre-tax profit on all rows
 
 2\. opex errors on the detected columns should be adjusted as per the audited formula
 
@@ -40,7 +40,7 @@ Make these modifications and document these changes in "tblConstantsAudit" table
 
 
 
-After these steps are complete, 
+After these steps are complete,
 
 Update the 'assumptions' sheet to reflect the complete list of assumptions. Replace the detected constants in the original 'P\&L' sheet using the suggested formulas and assumptions that trace back to the 'Assumptions'! list/table.
 
@@ -124,7 +124,7 @@ Tax = pre-tax profit × 25%
 
 Net income = pre-tax profit minus tax
 
-refer the 25% tax rate from the assumption sheet. 
+refer the 25% tax rate from the assumption sheet.
 
 
 
@@ -135,6 +135,4 @@ Show me the recalculated Tax, Net Income, Tax Loss Carryforward, and DTA for eve
 If anything is unclear in my layout, ask me before making changes.
 
 log these changes in the 'constants\_audit' sheeet
-
-
 
