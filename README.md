@@ -34,7 +34,7 @@ every P&L column as a formula linked to a single assumption sheet.
 **Result: 260 → 0 hardcoded cells. Model now re-forecasts from one input.**
 
 `Excel` · `Claude` · `Named ranges` · `Audit log` · `Tolerance-based matching`
-[→ Case study](./01-Constants-audit)
+[→ Case study](./01-Constants-Audit)
 
 ---
 
