@@ -28,18 +28,34 @@ documented decisions. AI used as a review layer — not a shortcut.
 **Status: Complete**
 
 Audited a 37-month SaaS P&L model to controller standard. Found 9 hidden
-constants across 260 cells, fixed tax and cash-flow logic, and rebuilt
-every P&L column as a formula linked to a single assumption sheet.
+constants across 260 cells, fixed tax and cash-flow logic, and rebuilt every
+P&L column as a formula linked to a single assumption sheet.
 
 **Result: 260 → 0 hardcoded cells. Model now re-forecasts from one input.**
 
 `Excel` · `Claude` · `Named ranges` · `Audit log` · `Tolerance-based matching`
-[→ Case study](./01-Constants-Audit)
+[→ Case study](./financial-model-audit)
+
+---
+
+### ✅ Renewable Energy — Solar Project Financial Model
+**Status: Complete**
+
+Built a project-finance model for a utility-scale solar asset from a CIM:
+cash-flow forecast, capital-stack structuring, and P50/P99 generation scenarios
+with debt sized against the most stringent criterion. Evaluated returns through
+NPV, IRR, payback, and sensitivity analysis.
+
+**Result: Debt sized to P99 generation; project IRR and minimum DSCR evaluated
+across P50 and P99 scenarios.**
+
+`Excel` · `Project finance` · `Sensitivity analysis`
+[→ Case study](./03-Renewable-Energy-Project)
 
 ---
 
 ### 🚧 Customer Risk Analysis — B2B SaaS
-**Status: In progress · Expected [Nov 2026]**
+**Status: In progress · Expected Nov 2026**
 
 Three-construct risk engine (churn / payment default / spend reduction) built
 on a multi-table star schema with WOE scorecards, out-of-sample validation,
@@ -51,17 +67,19 @@ dimension answered by a separate model, with a documented prompt trail.
 ---
 
 ### 🚧 Revenue Seasonality Analysis
-**Status: In progress · Expected [Dec 2026]**
+**Status: In progress · Expected Dec 2026**
 
+*[One-line scope to add when defined.]*
 
 ---
 
 ### 🚧 Three-Statement Model — SaaS (Duolingo)
-**Status: Planned · Expected [Dec 2026]**
+**Status: Planned · Expected Dec 2026**
 
-Driver-based 3-statement model + Forecast on a live SaaS company, with scenario
-toggle, balance/cash tie-checks, and headcount proration. Built the way an
-FP&A team builds: assumptions centralized, formulas end-to-end, audit-ready.
+Driver-based 3-statement model + forecast on a live SaaS company, with
+scenario toggle, balance/cash tie-checks, and headcount proration. Built the
+way an FP&A team builds: assumptions centralized, formulas end-to-end,
+audit-ready.
 
 `Excel` · `Financial Modeling` · `Financial Forecasting` · `Scenario analysis` · `Tie-checks`
 
@@ -69,9 +87,9 @@ FP&A team builds: assumptions centralized, formulas end-to-end, audit-ready.
 
 ## About the approach
 
-Every project in this portfolio follows the same discipline: **specify the
+Every project in this portfolio follows the same discipline: specify the
 problem clearly, generate or source data honestly, validate out-of-sample,
-and document every decision.** AI accelerates the build — it drafts code,
+and document every decision. AI accelerates the build — it drafts code,
 proposes structures, and critiques methodology — but it never makes the final
 call on thresholds, variable selection, or the business narrative. Those
 decisions are mine, logged, and defensible.
